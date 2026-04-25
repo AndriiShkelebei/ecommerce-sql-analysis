@@ -2,36 +2,51 @@
 
 ## 📌 Overview
 
-This project analyzes an e-commerce dataset using SQL to uncover key business insights related to revenue, customer behavior, product performance, and customer satisfaction.
+This project analyzes a real-world e-commerce dataset using SQL to uncover key business insights related to revenue, customer behavior, product performance, and customer satisfaction.
 
-The goal is to simulate real-world data analyst tasks and demonstrate strong analytical and business thinking.
+The goal is to simulate real data analyst tasks and demonstrate strong SQL skills, analytical thinking, and business understanding.
 
 ---
 
 ## 🎯 Business Questions
 
-* How is revenue evolving over time?
-* Do customers return or churn after the first purchase?
-* Which products and categories drive the most revenue?
-* What factors impact customer satisfaction?
+* How is revenue changing over time?
+* What is the customer retention rate?
+* Which products and categories generate the most revenue?
+* What factors influence customer satisfaction?
+
+---
+
+## 📂 Dataset
+
+Dataset: **Brazilian E-commerce Public Dataset (Olist)**
+Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+The dataset includes:
+
+* Orders
+* Customers
+* Products
+* Payments
+* Reviews
 
 ---
 
 ## 🧹 Data Preparation
 
-* Converted data types (dates, numeric values)
+* Converted data types (TEXT → numeric, timestamps)
 * Created primary and foreign keys
-* Removed inconsistencies and duplicates
-* Corrected revenue calculation to avoid double counting
+* Handled duplicates and inconsistencies
+* Fixed revenue calculation (avoided duplication by using order_items)
 
 ---
 
-## 📈 Key Results
+## 📈 Analysis
 
 ### 💰 Revenue
 
 * Total revenue: **16,008,872**
-* Strong growth during 2017–2018
+* Strong growth in 2017–2018
 * Peak month: **November 2017**
 * Average order value: **160.99**
 
@@ -43,13 +58,13 @@ The goal is to simulate real-world data analyst tasks and demonstrate strong ana
 * Retention rate: **3.12%**
 * Average orders per customer: **1.03**
 
-👉 Most customers make only one purchase → **very low retention**
+👉 Most customers make only one purchase → low retention
 
 ---
 
 ### 🛒 Products
 
-* Revenue is widely distributed across products
+* Revenue distributed across many products
 
 * Top categories:
 
@@ -61,7 +76,7 @@ The goal is to simulate real-world data analyst tasks and demonstrate strong ana
 
   * ~28% of products generate 80% of revenue
 
-👉 Business is diversified and not dependent on a small number of products
+👉 Business is diversified and not dependent on a few products
 
 ---
 
@@ -69,34 +84,34 @@ The goal is to simulate real-world data analyst tasks and demonstrate strong ana
 
 * Average rating: **4.09**
 
-#### Key Drivers:
+#### Key insights:
 
 * On-time delivery → **4.29 rating**
 * Delayed delivery → **2.57 rating**
 
-👉 Delivery delays reduce satisfaction by **~40%**
+👉 Delivery delays significantly reduce customer satisfaction
 
-* High-value orders have lower ratings
+* High-value orders → lower ratings
   👉 Customers with higher spending have higher expectations
 
 * Some sellers consistently receive ratings below 3.0
-  👉 Indicates quality or service issues
+  👉 Indicates seller performance issues
 
 ---
 
 ## 🔍 Key Insights
 
-* Customer retention is critically low and represents a major growth opportunity
-* Delivery delays are the strongest driver of negative reviews
-* Seller performance varies significantly and impacts customer experience
-* Revenue is stable and well diversified across products
+* Customer retention is critically low
+* Delivery delays are the strongest driver of негативних відгуків
+* Seller performance varies and impacts customer experience
+* Revenue is stable and diversified
 
 ---
 
 ## 💡 Recommendations
 
 * Improve delivery reliability and reduce delays
-* Implement customer retention strategies (loyalty programs, remarketing)
+* Implement retention strategies (loyalty programs, remarketing)
 * Monitor and manage low-performing sellers
 * Focus on high-performing product categories
 
@@ -121,4 +136,4 @@ The goal is to simulate real-world data analyst tasks and demonstrate strong ana
 
 ## 🚀 Author
 
-Aspiring Data Analyst with a focus on SQL and business analytics
+Aspiring Data Analyst focused on SQL and business analytics
