@@ -143,3 +143,24 @@ The Excel dashboard includes:
 
 ## 📂 Project Structure
 
+sql/
+├── revenue.sql
+├── customers.sql
+├── products.sql
+├── reviews.sql
+
+Dashboard.xlsx
+Dashboard.png
+README.md
+
+---
+
+## 📊 Dashboard Preview
+
+![Dashboard](Dashboard.png)
+
+---
+
+## 🚀 Author
+
+Aspiring Data Analyst focused on SQL, Excel, and business analytics
